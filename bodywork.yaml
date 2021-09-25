@@ -2,7 +2,7 @@ version: "1.0"
 project:
   name: bodywork-test-single-service-project
   docker_image: bodyworkml/bodywork-core:latest
-  DAG: stage_1
+  DAG: stage_1 >> stage_2
   usage_stats: false
 stages:
   stage_1:
