@@ -15,7 +15,8 @@ stages:
       port: 5000
       ingress: true
     requirements:
-      - flask==1.1.2
+      - flask==1.1.4
+      - markupsafe==2.0.1
   stage_2:
     executable_module_path: stage_two/main.py
     cpu_request: 0.1
@@ -26,6 +27,7 @@ stages:
       port: 6000
       ingress: true
     requirements:
-      - flask==1.1.2
+      - flask==1.1.4
+      - markupsafe==2.0.1
 logging:
   log_level: INFO
